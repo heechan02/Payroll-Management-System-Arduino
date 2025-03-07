@@ -6,3 +6,6 @@ Embedded payroll system with LCD control.
 - Interactive LCD dashboard
 - Optimized data storage
 - Input validation
+
+### Preparations
+You need Arduino device to run the code. Also, the additional python code helps testing the code quickly(optional).
