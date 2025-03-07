@@ -8,4 +8,5 @@ Embedded payroll system with LCD control.
 - Input validation
 
 ### Preparations
-You need Arduino device to run the code. Also, the additional python code helps testing the code quickly(optional).
+You need Arduino device to run the code. 
+Also, the additional python code helps testing the code quickly(optional).
