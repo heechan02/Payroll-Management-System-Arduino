@@ -34,7 +34,7 @@ The system features a robust serial interface for data management and an interac
 
 ### ⚙️ Finite State Machine (FSM)
 
-The system operates on a 5-state architecture:
+The system operates on a 5-state architecture: 
 
 1. **SYNC:** Handshake state (sends 'R' until "BEGIN" is received).
 
@@ -45,6 +45,9 @@ The system operates on a 5-state architecture:
 4. **BUTTON:** Handles scrolling and info display logic.
 
 5. **DISP:** Updates the LCD screen.
+
+*![State Diagram](fsm.png)*
+
 
 ## 🔌 Hardware & Software Requirements
 
