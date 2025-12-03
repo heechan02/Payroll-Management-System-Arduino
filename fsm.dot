@@ -1,0 +1,25 @@
+digraph "Payroll Management System" {
+    rankdir=TB;
+    
+    // Define states
+    A [label="SYNC" shape=circle];
+    B [label="STANDBY" shape=circle];
+    C [label="READ" shape=circle];
+    D [label="BUTTON" shape=circle];
+    E [label="DISP" shape=circle];
+
+    // Define start as plain text
+    Start [label="Start" shape=plaintext];
+    
+    // Define transitions
+    Start -> A
+    A -> B [label="Serial input == \"BEGIN\""];
+    B -> C [label="Serial.available > 0"];
+    C -> D [label="Button presses"];
+    D -> E [label="Updated current index"];
+    C -> E [label="Serial command"];
+    E -> C [label="LCD display"];
+    A -> A [label="Repeats 'R'"];
+    
+    
+}
